@@ -1,0 +1,123 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+pip-wheel-metadata/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Virtual Environment
+venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+.venv/
+
+# PyTorch / Lightning
+*.ckpt
+*.pth
+*.pt
+*.safetensors
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.project
+.pydevproject
+.settings/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+*.ipynb
+
+# Hydra outputs
+outputs/
+.hydra/
+multirun/
+
+# Logs
+*.log
+logs/
+tensorboard_logs/
+wandb/
+
+# Data (일반적으로 데이터는 git에 포함하지 않음)
+data/
+datasets/
+*.jpg
+*.jpeg
+*.png
+*.json
+*.csv
+!requirements.txt
+!README.md
+
+# OS
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+Desktop.ini
+
+# Temporary files
+*.tmp
+*.bak
+*.swp
+*.swo
+*~
+
+# Model outputs and submissions
+submissions/
+checkpoints/
+*.ckpt
+*.pth
+*.pt
+
+# Test outputs
+test_outputs/
+predictions/
+
+# Environment variables
+.env
+.env.local
+
+# Coverage reports
+.coverage
+htmlcov/
+.pytest_cache/
+
+# MyPy
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# Project specific
+baseline_submission.csv
+submission_*.csv
+*.json
+!configs/**/*.yaml
+!configs/**/*.json
