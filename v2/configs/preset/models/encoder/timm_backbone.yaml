@@ -1,0 +1,8 @@
+# @package _global_
+
+models:
+  encoder:
+    _target_: ${encoder_path}.TimmBackbone
+    model_name: 'tf_efficientnet_b3'  # EfficientNet-B3: 효율적인 feature extraction
+    select_features: [1, 2, 3, 4]     # Output layer
+    pretrained: true
