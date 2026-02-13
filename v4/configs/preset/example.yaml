@@ -1,0 +1,10 @@
+# 실제 학습시 사용되는 최종 config
+# 모든 config를 합쳐줌
+# @package _global_
+
+defaults:
+  - base
+  - /preset/datasets/db
+  - /preset/models/model_example
+  - /preset/lightning_modules/base
+  - _self_

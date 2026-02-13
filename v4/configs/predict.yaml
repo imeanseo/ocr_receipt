@@ -1,0 +1,13 @@
+# predict 기반이 되는 config
+
+defaults:
+  - _self_
+  - preset:
+  - override hydra/hydra_logging: disabled
+  - override hydra/job_logging: disabled
+
+seed: 42
+exp_name: "ocr_training"
+
+checkpoint_path: null # 모델 체크 포인트 path가 들어가면 모델이 prediction해서 json을 만들어 줌 
+minified_json: False

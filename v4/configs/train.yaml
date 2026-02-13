@@ -1,0 +1,23 @@
+# train 기반이 되는 config
+
+defaults:
+  - _self_
+  - preset: # 명령어를 통해서 example config를 매칭 시켜줌 
+  - override hydra/hydra_logging: disabled
+  - override hydra/job_logging: disabled
+
+seed: 42
+exp_name: "ocr_training"
+project_name: "OCRProject"
+
+wandb: False
+exp_version: "v1.0"
+
+resume: null # 모델 학습하다가 멈추는 경우 체크포인트를 넣어주면 다시 실행할 수 있음.
+
+trainer: # pytorch lightening을 참고해서 추가한 후 학습을 시킬 수 있음
+  max_epochs: 10
+  num_sanity_val_steps: 1
+  log_every_n_steps: 50
+  check_val_every_n_epoch: 1
+  deterministic: True

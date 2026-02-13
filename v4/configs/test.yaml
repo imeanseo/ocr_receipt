@@ -1,0 +1,16 @@
+# test 기반이 되는 config
+
+defaults:
+  - _self_
+  - preset:
+  - override hydra/hydra_logging: disabled
+  - override hydra/job_logging: disabled
+
+seed: 42
+exp_name: "ocr_training"
+project_name: "OCRProject"
+
+wandb: False
+exp_version: "v1.0"
+
+checkpoint_path: null # 우리가 test하고 싶은 모델이 들어가서 inference한 후 evaluation
