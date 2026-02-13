@@ -1,0 +1,10 @@
+# @package _global_
+
+models:
+  decoder:
+    _target_: ${decoder_path}.UNet
+    in_channels: [256, 512, 1024, 2048]  # ResNet50용
+    strides: [4, 8, 16, 32]              
+    inner_channels: 256                   # 유지
+    output_channels: 64                   # 유지
+    bias: False                           # 유지
