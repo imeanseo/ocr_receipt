@@ -1,4 +1,4 @@
-# Receipt Text Detection (패스트캠퍼스 AI16)
+# Receipt Text Detection
 
 영수증 텍스트 검출 대회용 프로젝트. **DBNet** 기반 Detection 모델의 학습·예측·제출 파이프라인.
 
