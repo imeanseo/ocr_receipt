@@ -49,7 +49,6 @@ venv.bak/
 
 # Jupyter Notebook
 .ipynb_checkpoints
-*.ipynb
 
 # Hydra outputs
 outputs/
